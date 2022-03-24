@@ -1,0 +1,459 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #404040;
+	font-family: 'Lato', sans-serif;	
+}
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+#logosneak
+{
+	width: 96px; 
+	height: 87px;
+	display: none; 
+	padding: 5px;
+	border: 4px solid #128870;
+}
+#zegar
+{
+	margin-top: 40px;
+	padding: 10px;	
+	text-align: right;
+	font-size: 20px;
+	width: 300px;
+	height: 50px;
+	color: #dedede;
+	float: right;
+	font-weight:900;	
+}
+#zegar:hover
+{
+	color: #128870;
+}
+#logo
+{
+	color:white;
+	margin-top: 20px;
+	font-size: 50px;
+	letter-spacing: 3px;
+	font-weight:900;
+	float: left;
+}
+.menu
+{
+	background-color: #303030;
+	margin-top: 20px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	color: #ffffff;	
+	text-align: center;
+	display: block;
+}
+ol
+{
+	padding: 0px;
+	margin: 0px;
+	list-style-type: none;
+	font-size: 18px;
+	line-height: 200%;
+	height: 40px;
+}
+ol > li
+{
+	float: left;
+	height: 40px;
+	min-width: 142px; 
+}
+ol >li:hover
+{
+	background-color: #000000;
+	cursor: pointer;
+}
+ol a
+{
+	color: #ffffff;
+	text-decoration: none;
+	display: block;
+}
+#topbar
+{
+	background-color:#128870;
+	color:white;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height:200px;
+}
+#topbarL
+{
+	float:left;
+	padding:20px;
+	padding-top:30px;
+	width: 148px;
+	text-align: center;
+	border-right: 2px dotted #cccccc
+}
+#topbarR
+{
+	float:left;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	width: 760px;
+	font-size:16px;
+	margin-left: 23px;	
+}
+.jpg_przycisk
+{
+	text-decoration: none;
+	border: none;
+	-webkit-appearance: none;
+	background-color: #128870;
+}
+ul
+{
+	list-style-type: none;
+	padding: 0px;
+	margin: 0px;
+}
+ul >li
+{
+	display: inline-block;
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#napis_menu
+{
+	display: none;
+}
+#logoLM
+{
+	border: 3px dashed #000000;
+}
+.news
+{
+	margin-bottom: 30px;
+
+}
+.tekst_gl
+{	
+}
+.img_tekst
+{
+	max-width: 100%;
+	max-height: 160px;
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+#sidebar
+{
+	float:left;
+	min-height:880px;
+	width: 148px;
+	padding: 20px;
+	background-color: lightgray;
+	text-align: center;
+	border-right: 2px dotted #666666;
+	font-size: 18px;
+}
+#sidebar > img
+{
+	margin-top: 40px;
+}
+.cytaty
+{
+	font-size: 16px;
+}
+#content
+{
+	float:left;
+	min-height:840px;
+	width: 730px;
+	padding: 40px;
+	background-color: #dedede;
+	text-align: justify;
+	margin: 0px;
+}
+.dottedline
+{
+	height: 5px;
+	margin-top:10px;
+	margin-bottom: 30px;
+	border-bottom: 2px dotted #444444;
+}
+#footer
+{
+	clear: both;
+	color:white;
+	text-align: center;
+	padding: 20px;
+	font-size: 18px;
+}
+#licznik
+{	
+}
+.optionL
+{
+	height: 25px;
+	font-size: 18px;
+	padding: 10px;
+	border-bottom: 2px dotted #444444;
+}
+.optionL a
+{
+	color: black;
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 128px;
+	font-size: 18px;
+}
+.optionL:hover
+{
+	background-color: #f36742;
+	cursor: pointer;
+	color:white;
+}
+.bigtitle
+{
+	font-size: 32px;
+	font-weight: 900;
+	letter-spacing:2px;
+}
+#toggle-1
+{
+	display: none;
+}
+
+#trzcionka_button {
+	margin-top: 20px;
+	float: right;
+}
+
+
+@media only screen and (max-width: 800px)
+{
+#container
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topbar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#logosneak
+{
+	width: 96px; 
+	height: 87px;
+	display: block;
+	float: right;
+}
+#zegar
+{
+	display: none;
+}
+#sidebar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+.menu
+{
+	text-align: center;
+	background-color: #404040;
+}
+ol
+{
+	text-align: center;
+}
+ol > li
+{
+	height: auto;
+	background-color: #303030;
+	margin-left: auto;
+    margin-right: auto;
+	display: inline-block;
+}
+ol > li:last-child
+{
+	margin-bottom: 20px;
+}
+}
+
+@media only screen and (max-width: 500px)
+{
+#container
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo
+{
+	display: none;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#topbar
+{
+	display: none;
+}
+#logosneak
+{
+	width: 120px;
+	height: 110px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	text-align: center;
+	float: none;
+}
+#zegar
+{
+	display: none;
+}
+#sidebar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+#content
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+.menu
+{
+	text-align: center;
+	background-color: #404040;
+	display: block;
+}
+ol
+{
+	text-align: center;
+	display: block;
+	margin-right: auto;
+    margin-left: auto;
+}
+ol > li
+{
+	height: auto;
+	background-color: #303030;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	min-width: 100%;
+	text-align: center;
+}
+ol > li:last-child
+{
+	margin-bottom: 20px;
+}
+#slider
+{
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: scroll;
+}
+
+	#trzcionka_button {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+}
+
+#wiadomosc {
+	padding: 7px 7px;
+	width: 250px;
+	height: 120px;
+	background: #262626;
+	border: 3px solid #128870;
+	overflow: hidden;
+	background-color: lightgray;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	font: 400 13.3333px Arial;
+}
+
+#email {
+	padding: 7px 7px;
+	height: 25px;
+	width: 250px;
+	background: #262626;
+	border: 3px solid #128870;
+	overflow: hidden;
+	background-color: lightgray;
+	margin-bottom: 20px;
+	letter-spacing: normal;
+	word-spacing: normal;
+	text-transform: none;
+	font: 400 13.3333px Arial;
+}
+
+#galeria {
+	text-align: center;
+}
+#galeria img
+{
+	margin: 10px 14px;
+}
+#slider
+{
+	border: 3px solid #128870; 
+	height: 482px;
+}
+#suwak
+{
+	-webkit-appearance: none;  
+	width: 150px; 
+	height: 25px; 
+	background: #d3d3d3; 
+	border: 2px solid #404040;
+	outline: none; 
+	opacity: 0.5; 
+	-webkit-transition: .2s; 
+}
+#suwak:hover {
+	opacity: 1; 
+}
+
+#wideo
+{
+	 width:730px;
+	 height:410px;
+	 border: none;
+}

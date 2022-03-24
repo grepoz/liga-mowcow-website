@@ -1,0 +1,336 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background-color: #404040;
+	font-family: 'Lato', sans-serif;	
+}
+#container
+{
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 20px;
+}
+#headertext
+{
+	color:white;
+	margin-top: 30px;
+	font-size: 50px;
+	text-align: center;
+	letter-spacing: 3px;
+	font-weight:900;
+	float: center;
+}
+
+#form
+{
+	background-color:#128870;
+	color:white;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 40px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	padding: 30px;
+	width: 500px;
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: center;
+}
+
+.formfield
+{
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+input[type=text],
+input[type=password]
+{
+	width: 300px;
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	outline: none;
+	
+}
+
+input[type=text]:focus,
+input[type=password]:focus
+{
+	border: 2px solid black;
+	background-color: #e9f3e9;
+	
+}
+
+input[type=checkbox]
+{
+	width: 30px;
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	cursor: pointer;
+	letter-spacing: 2px;
+}
+
+input[type=submit]
+{
+	width: 300px;
+	background-color: #37a44d; 
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline: none;
+	font-weight:600;
+}
+input[type=submit]:hover
+{
+	background-color: #52a437;
+}
+
+.redirect
+{
+	width: 300px;
+	background-color: #37a44d; 
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	
+	
+	cursor: pointer;
+	box-sizing: border-box;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+}
+
+.redirectlink
+{
+	color: black;
+	text-decoration: none; 
+
+	display: block;
+	width: 294px;
+	height: auto;
+}
+
+.redirectlink:hover
+{
+	background-color: #52a437;
+}
+
+.error
+{
+	text-align: center;
+	font-size: 15px;
+	color:black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+input[type="file"]
+{
+	display: none;
+	
+}
+
+#galerialabel
+{
+	width: 440px;
+	background-color: #37a44d; 
+	border: 3px solid #ddd;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	letter-spacing: 2px;
+	cursor: pointer;
+	outline: none;
+	float: left;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+	font-weight:600;
+	
+}
+
+#galerialabel:hover
+{
+	background-color: #52a437;
+}
+
+#galeriainfo
+{
+	margin-top: 60px;
+	margin-bottom: 40px;
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	height: auto;
+	background-color: #dedede;
+	padding: 30px;
+	text-align: center;
+	box-sizing: border-box;
+	border: 3px solid #ddd;
+	border-radius: 5px;
+}
+
+@media only screen and (max-width: 800px)
+{
+#container
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#topbar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+#logosneak
+{
+	width: 96px; 
+	height: 87px;
+	display: block;
+	float: right;
+}
+#zegar
+{
+	display: none;
+}
+#sidebar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+
+#content
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+@media only screen and (max-width: 500px)
+{
+#container
+{
+	width: auto;
+	margin-left: auto;
+	margin-right: auto;
+}
+#logo
+{
+	display: none;
+	float: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#topbar
+{
+	display: none;
+}
+#logosneak
+{
+	width: 120px;
+	height: 110px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15px;
+	text-align: center;
+	float: none;
+}
+#zegar
+{
+	display: none;
+}
+#sidebar
+{
+	display: none;
+	margin: 0;
+	padding: 0;
+}
+#content
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: auto;
+}
+
+#slider
+{
+	width: auto;
+	height: auto;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: scroll;
+}
+}
+
+
+
+#wiadomosc 
+{
+	padding:7px 7px;
+	width:350px;
+	background:#262626;
+	border: 3px solid #128870;
+	overflow:hidden;
+	height:120px;
+	background-color: lightgray;
+}
+#galeria
+{
+	text-align: center;
+}
+#galeria img
+{
+	margin: 10px 14px;
+}
+#slider
+{
+	border: 3px solid #128870; 
+	height: 482px;
+}
+#suwak
+{
+	-webkit-appearance: none;  
+	width: 150px; 
+	height: 25px; 
+	background: #d3d3d3; 
+	border: 2px solid #404040;
+	outline: none; 
+	opacity: 0.5; 
+	-webkit-transition: .2s; 
+}
+#suwak:hover {
+	opacity: 1; 
+}
+
+#wideo
+{
+	 width:730px;
+	 height:410px;
+	 border: none;
+}
+

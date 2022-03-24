@@ -1,0 +1,154 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8" />
+<title> Liga Mówców</title>
+<meta name="description" content="Tu znajdziesz wszystko by rosnąć scenicznie"/>
+<meta name="keywords" content="scena, przemawianie, występy publiczne, teatr, improwizacja, zabawa, mic, mikrofon, stage"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href ="style_stage.css" type="text/css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+<script src="skrypty/jquery-1.11.3.js"></script>
+<script src="skrypty/menu.js"></script>
+
+</head>
+
+
+<body onload="odliczanie();">
+
+	<div id="container">
+	
+	
+	
+		<div id="logo">
+		  Liga Mówców   
+		</div>
+		<div id="zegar" title="ooo"></div>
+		<div><img src="img/LM-bialy.png" id="logosneak" alt="Liga" title="LM"></div>
+		<div style="clear:both;"></div>
+		
+		<div class="menu">
+			
+			<ol>
+				<li><a href="index.html"> Strona główna </a></li> 
+				<li><a href="dzialalnosc.html"> Działalność </a></li>
+				<li><a href="topksiazki.html"> Top książki </a></li>
+				<li><a href="galeria.html"> Galeria </a></li>				
+				<li><a href="oprojekcie.html"> O projekcie </a></li>
+				<li><a href="klubLM.html"> Klub LM </a></li>
+				<li><a href="kontakt.html"> Kontakt </a></li>				
+			</ol>
+		
+		</div>
+		
+				
+		<div id="topbar">
+			<div id="topbarL">
+			  <table id="logoLM"><tr><th style="padding: 20px;"><img src="img/LM-bialy.png" width="96" height="87" alt="Liga"/></th></tr></table>
+			</div>
+			
+			<div id="topbarR">
+			  <ul>
+				<li><img class="gal" id="foto1"  src="img/igor.jpg" width="210" height="140" alt="Spotkanie z Igorem"/></li>
+				<li><img class="gal" id="foto2"  src="img/boys.jpg" width="210" height="140" alt="Ligowe Chłopaki!"/></li>
+				<li><img class="gal" id="foto3"  src="img/all.jpg" width="210" height="140" alt="To my!"/></li>		  
+			  </ul>
+			  
+			  <div style="text-align: center;" id="klikniecia"></div>
+			  
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div id="sidebar">
+		  <div class="optionL"> <a href="index.html"> Strona główna </a> </div> 
+		  <div class="optionL"> <a href="dzialalnosc.html"> Działalność </a> </div>
+		  <div class="optionL"> <a href="topksiazki.html"> Top książki </a> </div>
+		  <div class="optionL"> <a href="galeria.html"> Galeria </a> </div>
+		  <div class="optionL"> <a href="oprojekcie.html"> O projekcie </a> </div>
+		  <div class="optionL"> <a href="klubLM.html"> Klub LM </a> </div>
+		  <div class="optionL"> <a href="kontakt.html"> Kontakt </a> </div>
+		  <img src="img/mic1.png" width="140" height="120" alt="mic.icon"/>
+		  <div class="cytaty"> "Wszyscy wielcy mówcy byli najpierw złymi mówcami" – Ralph Waldo Emerson </div>
+		  
+		
+		</div>
+		
+		<div id="content">
+			<span class="bigtitle"> Aktualności </span>
+
+			<input type="button" onclick="setFont();" value="Zmien trzcionkę" id="trzcionka_button" />
+			
+			<div style="height: 15px;"></div>
+			<div class="dottedline"></div>
+
+			<div class="news">
+				<img class="img_tekst" src="img/stepa.jpg" alt="Maciej Stępa" />
+				<div class="tekst_gl">
+					<h3>Spotkanie z Maciejem Stępą</h3>
+					To było pierwsze spotkanie Ligi Mówców z prelegentem w tym roku. I to jakim! W ostani wtorek odwiedził nas
+					sam Maciej Stępa!
+					Swoim porywającym przemówieniem zabrał nas w podróż w czasie od prechistorii człowieka przez
+					dwudziestowieczną Rosję do teraźniejszości. Wszystko po to aby przypomnieć jak ważna jest  umiejętność przemówień
+					publicznych, jakie znaczenie mają słowa jakich dobieramy i że mową kreujemy rzeczywistość!
+					Więcej zdjęć na <a href="https://www.facebook.com/Liga-M%C3%B3wc%C3%B3w-437442879993292/" target="_blank">Facebooku</a>
+
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="news">
+				<img class="img_tekst" src="img/bezee.jpg" alt="BeZee" />
+				<div class="tekst_gl">
+					<h3>Konferencja BeZee #Trendy w edukacji</h3>
+					Już 15 listopada w ECS odbędzie się 5.Międzynarodowa Konferencja BeZee!
+					Czym jest społeczna odpowiedzialność edukacji?
+					Czym charakteryzuje się przetsiębiorcza szkoła?
+					Jak szkoła może współpracować z biznesem?
+					To główne tematy tegorocznej konferencji.
+					Wydarzenie warte uwagi! Można będzie wysłuchać inspirujących prelekcji, poznać dużo ciekawych ludzi, a
+					przede wszystkim wiele się dowiedzieć. Do zobaczenia!
+					<a href="https://www.facebook.com/gdanskbusinessweek/posts/2848643201831037" target="_blank">Konferencja BeZee</a>
+
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+			<div class="news">
+				<img class="img_tekst" src="img/II_spotkanie.jpg" alt="II spotkanie" />
+				<div class="tekst_gl">
+					<h3>To już drugie spotkanie w tym roku! I to jakie!</h3>
+					Ostatnie spotkanie było wyjątkowe, gdyż odbyły się pierwsze w histori Ligi Mówców wybory do zarządu. Ale pokolei.
+					Spotkanie poprowadził Kuba. Po któtkim wstępie swojego icebrekera powiedział Tymek.
+					Następnie Kuba wyjaśnił, na czy polegać będą funkcję presesa ds. finansów, edukacji i marketingu.
+					Każdy z kandydatów miał do 5 min na przemowę, po których odbyły się wybory. Prezesem ds. finansów
+					został Jakub, presezem ds. edukacji Szymon a funkcję prezesa ds. marketingu objął Tymek.
+					Po wyborach gorące pytania, w nieco bardziej muzycznym stylu, poprowadził Jakub.
+					Wszystko świetnym podsumowaniem zakończył niezastąpiony Grzegorz.
+					Więcej zdjęć na <a href="https://www.facebook.com/Liga-M%C3%B3wc%C3%B3w-437442879993292/" target="_blank">Facebooku</a>
+
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+
+		</div>
+		
+		<div id="footer">
+		  Poznaj scenę od podszewki! &copy; Liga Mówców, wszelkie prawa zastrzeżone.
+		</div>
+		
+	</div>
+		
+		
+		
+		
+
+
+</body>
+</html>

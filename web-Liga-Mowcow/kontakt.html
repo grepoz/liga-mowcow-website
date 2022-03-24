@@ -1,0 +1,201 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8" />
+<title> Liga Mówców</title>
+<meta name="description" content="Tu znajdziesz wszystko by rosnąć scenicznie"/>
+<meta name="keywords" content="scena, przemawianie, występy publiczne, teatr, improwizacja, zabawa, mic, mikrofon, stage"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href ="style_stage.css" type="text/css"/>
+<link href="jquery-ui.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+
+<script src="skrypty/jquery-1.11.3.js"></script>
+<script src="skrypty/external/jquery/jquery.js"></script>
+<script src="skrypty/jquery-ui.js"></script>
+<script src="skrypty/menu.js"></script>
+
+</head>
+
+
+<body onload="odliczanie();licz();ocen();">
+
+	<div id="container">
+	
+	
+	
+		<div id="logo">
+		  Liga Mówców   
+		</div>
+		<div id="zegar" title=""></div>
+		<div><img src="img/LM-bialy.png" id="logosneak" alt="Liga" title="LM"></div>
+		<div style="clear:both;"></div>
+		
+		<div class="menu">
+			
+			<ol>
+				<li><a href="index.html"> Strona główna </a></li> 
+				<li><a href="dzialalnosc.html"> Działalność </a></li>
+				<li><a href="topksiazki.html"> Top książki </a></li>
+				<li><a href="galeria.html"> Galeria </a></li>				
+				<li><a href="oprojekcie.html"> O projekcie </a></li>
+				<li><a href="klubLM.html"> Klub LM </a></li>
+				<li><a href="kontakt.html"> Kontakt </a></li>
+				
+			</ol>
+		
+		</div>
+		
+		
+		<div id="topbar">
+			<div id="topbarL">
+			  <table id="logoLM"><tr><th style="padding: 20px;"><img src="img/LM-bialy.png" width="96" height="87" alt="Liga"/></th></tr></table>
+			</div>
+			
+			<div id="topbarR">
+			 
+			  <ul>
+				<li><img class="gal" id="foto1"  src="img/igor.jpg" width="210" height="140" alt="Spotkanie z Igorem"/></li>
+				<li><img class="gal" id="foto2"  src="img/boys.jpg" width="210" height="140" alt="Ligowe Chłopaki!"/></li>
+				<li><img class="gal" id="foto3"  src="img/all.jpg" width="210" height="140" alt="To my!"/></li>
+			  
+			  </ul>
+			  <div style="text-align: center;" id="klikniecia"></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div id="sidebar">
+		  <div class="optionL"> <a href="index.html"> Strona główna </a> </div> 
+		  <div class="optionL"> <a href="dzialalnosc.html"> Działalność </a> </div>
+		  <div class="optionL"> <a href="topksiazki.html"> Top książki </a> </div>
+		  <div class="optionL"> <a href="galeria.html"> Galeria </a> </div>
+		  <div class="optionL"> <a href="oprojekcie.html"> O projekcie </a> </div>
+		  <div class="optionL"> <a href="klubLM.html"> Klub LM </a> </div>
+		  <div class="optionL"> <a href="kontakt.html"> Kontakt </a> </div>
+		  <img src="img/mic1.png" width="140" height="120" alt="mic.icon"/>
+		  <div class="cytaty"> "Wszyscy wielcy mówcy byli najpierw złymi mówcami" – Ralph Waldo Emerson </div>
+		  <div style="margin-top: 30px;">Jesteś z nami już<button id="licznik" ></button>sekund!</div>
+		  
+		
+		</div>
+		
+		<div id="content">
+			<span class="bigtitle"> Kontakt </span>
+			<div style="height: 15px;"></div>
+			<div class="dottedline"></div>
+
+			<div>
+				<b>Mail:</b>     ligamowcow@gmail.com<br />
+				<b>Facebook:</b> Liga Mówców<br />
+				<b>Snapchat:</b> #ligamowcow<br /><br /><br />
+			</div>
+
+			<script>
+				window.addEventListener('DOMContentLoaded', function() {
+				var sessionContent = sessionStorage.getItem("Message");
+
+				if(sessionContent !== null) {
+				document.getElementById("wiadomosc").innerHTML = sessionContent;
+				}
+
+				document.getElementById("wiadomosc").onkeyup = function() {
+				sessionStorage.setItem("Message", this.value);
+				}
+				})
+
+			</script>
+
+			<form action="#">
+				<h3>Napisz do nas!</h3><br />
+				<div><input type="text" name="email" id="email" placeholder="email"/></div>
+				<textarea id="wiadomosc" cols="50" rows="3" name="wiadomosc" type="text" title="Napisz do nas!" placeholder="wiadomosc"></textarea><br><br>
+				<input type="submit" value="Wyślij" onclick="czysc();" />
+			</form>
+
+			<script>
+				$( function() {
+				$( document ).tooltip();
+				} );
+			</script>
+
+			<br><br>
+			<h3> Oceń działanie strony teraz! Zaznacz proszę za pomocą suwaka od 0 do 10 :)</h3>
+			<div style="height: 15px;"></div>
+
+			<div id="Range" title="Oceń nas!"></div>
+			<div id="demo"></div><br>
+			<div style="clear: both;"></div>
+
+			<noscript>
+				<div>Nie możesz ocenić, ponieważ Javascript jest wyłączony!</div>
+			</noscript>
+
+			<input type="button" onclick="wynik_oceny();" value="Prześlij ocenę" style="margin-top: 30px;" /><br><br>
+			<div id="ocena"></div>
+			<br><br>
+
+
+			<div id="dialog" style="display: none;">
+				<h4>Cześć!</h4>
+				<p>Polub nas na <a href="https://www.facebook.com/Liga-M%C3%B3wc%C3%B3w-437442879993292/" target="_blank">Facebooku! </a>Dowiesz się łatwo kiedy jest następne spotkanie i będziesz się mógł z nami rozwiajać! Twoje polubienie to dla nas duże wsparcie. Jako Liga Mówców cały czas chcemy rosnąć i umożliwaiać młodzieży rozwój umiejętności scenicznych.</p>
+			</div>
+
+			<script>
+
+				if(sessionStorage.getItem("Dialog")!="done")
+				{
+				$( "#dialog" ).dialog({
+				autoOpen: true,
+				width: 400,
+				buttons: [
+				{
+				text: "Ok",
+				click: function() {
+				$( this ).dialog( "close" );
+				}
+				},
+				{
+				text: "Cancel",
+				click: function() {
+				$( this ).dialog( "close" );
+				}
+				}
+				]
+				});
+				}
+				sessionStorage.setItem("Dialog", "done");
+
+			</script>
+
+		</div>
+		
+		
+		<div id="footer">
+		  Poznaj scenę od podszewki! &copy; Liga Mówców, wszelkie prawa zastrzeżone.
+		</div>
+		
+	</div>
+		
+		
+		
+		
+	
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+﻿<!DOCTYPE HTML>
+<html lang="pl">
+
+<head>
+
+<meta charset="utf-8" />
+<title> Liga Mówców</title>
+<meta name="description" content="Tu znajdziesz wszystko by rosnąć scenicznie"/>
+<meta name="keywords" content="scena, przemawianie, występy publiczne, teatr, improwizacja, zabawa, mic, mikrofon, stage"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="stylesheet" href ="style_stage.css" type="text/css"/>
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,900&display=swap&subset=latin-ext" rel="stylesheet">
+<script src="skrypty/jquery-1.11.3.js"></script>
+<script src="skrypty/menu.js"></script>
+
+</head>
+
+
+<body onload="odliczanie();">
+
+	<div id="container">
+	
+	
+	
+		<div id="logo">
+		  Liga Mówców   
+		</div>
+		<div id="zegar" title="ooo"></div>
+		<div><img src="img/LM-bialy.png" id="logosneak" alt="Liga" title="LM"></div>
+		<div style="clear:both;"></div>
+		
+		<div class="menu">
+		
+			<ol>
+				
+				<li><a href="index.html"> Strona główna </a></li> 
+				<li><a href="dzialalnosc.html"> Działalność </a></li>
+				<li><a href="topksiazki.html"> Top książki </a></li>
+				<li><a href="galeria.html"> Galeria </a></li>				
+				<li><a href="oprojekcie.html"> O projekcie </a></li>
+				<li><a href="klubLM.html"> Klub LM </a></li>
+				<li><a href="kontakt.html"> Kontakt </a></li>	
+			</ol>
+		
+		</div>
+				
+		
+		<div id="topbar">
+			<div id="topbarL">
+			  <table id="logoLM"><tr><th style="padding: 20px;"><img src="img/LM-bialy.png" width="96" height="87" alt="Liga"/></th></tr></table>
+			</div>
+			
+			<div id="topbarR">
+			  
+			  <ul>
+				<li><img class="gal" id="foto1"  src="img/igor.jpg" width="210" height="140" alt="Spotkanie z Igorem"/></li>
+				<li><img class="gal" id="foto2"  src="img/boys.jpg" width="210" height="140" alt="Ligowe Chłopaki!"/></li>
+				<li><img class="gal" id="foto3"  src="img/all.jpg" width="210" height="140" alt="To my!"/></li>
+			  
+			  </ul>
+			  <div style="text-align: center;" id="klikniecia"></div>
+			</div>
+			<div style="clear:both;"></div>
+		</div>
+		
+		<div id="sidebar" style="height:1350px;">
+		  <div class="optionL"> <a href="index.html"> Strona główna </a> </div> 
+		  <div class="optionL"> <a href="dzialalnosc.html"> Działalność </a> </div>
+		  <div class="optionL"> <a href="topksiazki.html"> Top książki </a> </div>
+		  <div class="optionL"> <a href="galeria.html"> Galeria </a> </div>
+		  <div class="optionL"> <a href="oprojekcie.html"> O projekcie </a> </div>
+		  <div class="optionL"> <a href="klubLM.html"> Klub LM </a> </div>
+		  <div class="optionL"> <a href="kontakt.html"> Kontakt </a> </div>
+		  <img src="img/mic1.png" width="140" height="120" alt="mic.icon"/>
+		  <div class="cytaty"> "Wszyscy wielcy mówcy byli najpierw złymi mówcami" – Ralph Waldo Emerson </div>
+		  <div style="font-size:40px;color: red;margin-top: 60px;">&#9829;</div>
+		  <div id="cytaty2"></div> 
+		  <div style="font-size:40px;color: red;">&#9829;</div>
+		</div>
+		
+		<script>
+			var cytaty2 = document.createElement("P"); 
+			var tekst_cytaty2 = document.createTextNode("Wesprzyj nas! Udział w Lidze Mówców jest całkowicie darmowy. Chcemy dawać jak największą wartość młodzieży, lecz aby się nieustannie rozwijać potrzebujemy różnych materiałów dydaktycznych i promocyjnych. Napisz do nas - albo powiedz 5 osobom o naszym projekcie. Umiemy się odwdzięczyć!");
+			cytaty2.appendChild(tekst_cytaty2);
+			
+			cytaty2.style.border = "2px dashed red";
+			document.getElementById("cytaty2").appendChild(cytaty2);
+			
+		</script>
+		
+		<div id="content">
+		    <span class="bigtitle"> TOP książki i wystąpienia polecane przez nas </span>
+			<div style="height: 15px;"></div>
+			<div class="dottedline"></div>
+			
+			<div class="news">
+				<img class="img_tekst" src="img/dalecarnegie.jpg" alt="Dale Carnegie"/>
+				<div class="tekst_gl"><h3>Jak stać się doskonałym mówcą i rozmówcą</h3><br/>
+						Dale Carnegie - mistrz słowa i psychologii!<br/>
+						Wchodzisz na mównicę...<br/><br/>
+
+						Wyprostuj się i spójrz swoim słuchaczom prosto w oczy, po czym zacznij mówić głosem tak pewnym, jakby każda z siedzących
+						przed tobą osób winna ci była pieniądze. Ale musisz wiedzieć, co chcesz powiedzieć:
+						"Zanim mówca stanie przed słuchaczami, powinien napisać list do przyjaciela, zawierający takie oto słowa: "Zamierzam wygłosić
+						mowę na pewien temat i chcę poruszyć następujące kwestie". Następnie powinien wskazać na rzeczy, o jakich chce mówić,
+						wymieniając je w takiej kolejności, w jakiej zamierza przedstawić je w swojej mowie. Jeśli w trakcie pisania listu przekona
+						się, że tak naprawdę nie ma nic do powiedzenia, niech czym prędzej napisze do organizatora, który zaprosił go do zabrania
+						głosu, by z żalem zawiadomić, że prawdopodobna śmierć jego babki może uniemożliwić mu przybycie na miejsce".<br/><br/>
+
+						Dale Carnegie, autor legendarnej książki Jak zdobyć przyjaciół i zjednać sobie ludzi, swą karierę wybitnego "nauczyciela
+						życia" dwudziestego wieku rozpoczął od nauczania sztuki publicznego przemawiania. Jego klasyczne opracowanie na ten temat
+						ukazało się w 1926 roku, doczekawszy się wielu skróconych wersji. To nowe uaktualnione wydanie, zachowuje pełny wachlarz
+						koncepcji i metod, jakie zawierała wersja oryginalna - łącznie z ćwiczeniami głosu, zamykającymi każdy rozdział, według
+						pierwotnego zamysłu autora.<br/><br/>
+
+						Dale Carnegie (1888-1955) był pionierem w dziedzinie, którą dziś nazywamy rozwojem ludzkiego potencjału. Jego wykłady i
+						publikacje wspierały ludzi z całego świata, którym pomógł stać się osobami pewnymi siebie, ujmującymi i wpływowymi.
+						Zadebiutował w roli nauczyciela wystąpień publicznych w Nowym Jorku w YMCA w 1912 roku. Carnegie prowadził szeroko zakrojone
+						badania na temat podejścia do życia, charakteryzującego ludzi sukcesu. Cały ten wysiłek zaowocował powstaniem jego
+						najsłynniejszej książki: Jak zdobyć przyjaciół i zjednać sobie ludzi. Książka natychmiast stała się bestsellerem, a począwszy
+						od jej publikacji w 1936 roku sprzedała się w ponad dwudziestu milionach egzemplarzy. W 2002 roku magazyn biznesowy FORBES
+						uhonorował ją tytułem Książki Biznesowej XX wieku. Co tydzień ponad 2 i pół tysiąca ludzi na całym świecie zapisuje się na
+						kursy firmowane przez D. Carnegie dołączając tym samym do czteromilionowej rzeszy ludzi, którzy mają za sobą te słynne
+						szkolenia pozwalające doskonalić samych siebie.<br/><br/><br/>
+
+						
+				</div>
+				
+			</div>
+			
+			<div>
+			<h3>Oglądamy bez końca..</h3><br/><br/>
+			<iframe id="wideo" src="https://www.youtube.com/embed/bbz2boNSeL0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<!--wideo sie nie sklauje dobrze!!-->
+			</div>
+			
+		</div>
+		
+		<div id="footer">
+		  Poznaj scenę od podszewki! &copy; Liga Mówców, wszelkie prawa zastrzeżone.
+		</div>
+		
+	</div>
+		
+		
+		
+		
+	
+	
+
+
+
+
+
+
+
+
+
+</body>
+</html>
